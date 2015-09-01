@@ -73,8 +73,8 @@ RUN chmod 755 /start.sh
 VOLUME ["/usr/share/nginx/html"]
 
 # add test PHP file
-ADD ./index.php /usr/share/nginx/html/index.php
-RUN chown -R www-data:www-data /usr/share/nginx/html/
+ADD ./index.php /var/www/index.php
+RUN chown -R www-data:www-data /var/www/
 
 # Expose Ports
 EXPOSE 443
